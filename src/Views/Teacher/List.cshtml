@@ -1,0 +1,19 @@
+@model List<Teacher>
+<div>
+   
+        <h3 class="margin-bottom-1">Teachers</h3>
+      
+        
+             @foreach(Teacher teacher in Model)
+             {
+                <a href="show?teacherid=@(teacher.Id)">
+                    <div class="flex-row margin">
+                        <span class="margin-right-1">@teacher.FirstName</span>
+                        <span class="margin-right-2">@teacher.LastName</span>
+                    </div>
+                </a>
+             }
+            
+      
+   
+</div>
